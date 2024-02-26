@@ -1,20 +1,19 @@
-import { Button } from "@mui/material";
-import SettingsIcon from "@mui/icons-material/Settings";
+import Navbar from "./components/Navbar";
+import Feed from "./components/Feed";
+import Rightbar from "./components/Rightbar";
+import Sidebar from "./components/Sidebar";
+import { Box, Stack } from "@mui/material";
 
 function App() {
   return (
-    <>
-      <h1>Hello world</h1>
-      <Button variant="text" startIcon={<SettingsIcon />} color="secondary">
-        Settings
-      </Button>
-      <Button variant="contained" startIcon={<SettingsIcon />}>
-        Contained
-      </Button>
-      <Button variant="outlined" startIcon={<SettingsIcon />}>
-        Outlined
-      </Button>
-    </>
+    <Box>
+      <Navbar />
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Stack>
+    </Box>
   );
 }
 
