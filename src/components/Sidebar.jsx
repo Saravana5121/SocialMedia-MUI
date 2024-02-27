@@ -3,7 +3,7 @@ import {
   Groups2,
   Home,
   ModeNight,
-  Pages,
+  Pages, 
   Person2,
   Settings,
   Shop2,
